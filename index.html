@@ -1,90 +1,221 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
-    <link rel="stylesheet" href="./index.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>FlexStart Hero Section</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .hero {
+      background: #f6f9ff;
+      padding: 100px 0;
+    }
+    .hero h1 {
+      font-weight: 700;
+      font-size: 48px;
+      color: #012970;
+    }
+    .hero p {
+      color: #5e5e5e;
+    }
+    .hero-img {
+      max-width: 100%;
+    }
+    .btn-primary {
+      background-color: #4154f1;
+      border: none;
+    }
+    .btn-video {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-weight: 500;
+      color: #012970;
+      text-decoration: none;
+    }
+    .btn-video i {
+      font-size: 24px;
+      color: #4154f1;
+    }
+  </style>
 </head>
 <body>
-    <header>  <img src="./logo.png" alt="">
-    <h1>FlexStart</h1>
 
-    <nav>
-        <a href="" class="specail">Home</a>
-        <a href="">about</a>
-        <a href="">services</a>
-        <a href="">protfolie</a>
-        <a href="">Team</a>
-        <a href="">Blog</a>
-        <a href="">Dropdown <i class="bi bi-arrow-down-short"></i></a>
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-down-short" viewBox="0 0 16 16">
-  <path fill-rule="evenodd" d="M8 4a.5.5 0 0 1 .5.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L7.5 10.293V4.5A.5.5 0 0 1 8 4"/>
-</svg>
-        <a href="">Lising</a>
-        <a href="">content</a>
-    </nav>
-     
-   
-    </header>
-      
-    <section class="section1">
-        <div class="parent">
-            <h1>
-                We offer modern solutions <br> for growing your business
-            </h1>
-            <p>
-                We are team of talented designers making websites with Bootstrap
-            </p>
-            <button>Get started</button>
-            
-        </div>
-        <div class="son">
-            <img src="./hero-img.png" alt="">
-        </div>
-    </section>
-      
-       <section class="section2">
-        <div class="left">
-            <div>
-                <p class="p1">
-                    Who We Are
+<nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm py-3   z-3 ">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="#">FlexStart</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav me-3">
+        <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Services</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Portfolio</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Team</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Dropdown</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Option 1</a></li>
+            <li><a class="dropdown-item" href="#">Option 2</a></li>
+          </ul>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+      </ul>
+      <a href="#" class="btn btn-primary">Get Started</a>
+    </div>
+  </div>
+</nav>
 
-                </p>
-                <p class="p2">
-                    Expedita voluptas omnis cupiditate totam eveniet <br> nobis sint iste. Dolores est repellat corrupti <br> reprehenderit.
-                </p>
-                <p>
-                    Quisquam vel ut sint cum eos hic dolores aperiam. Sed deserunt et. Inventore et et <br> dolor consequatur itaque ut voluptate sed et. Magnam nam ipsum tenetur <br> suscipit voluptatum nam et est corrupti.
-                </p>
-                <button type="button" class="btn btn-primary btn-lg">Read more <i class="bi bi-arrow-right"></i></button>
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
-  <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
-</svg>
-            </div>
-        </div>
-        <div class="right">
-            <img src="./about.jpg" alt="">
-        </div>
-       </section>
 
-       <section class="section3">
-        <div>      <button type="button" class=" btn btn-primary btn-lg">Our Values
-</button>
-<h1>What we value most
-
-</h1></div>
-  
-       </section>
-
-       <section class="section4">
-        <div class="parent">
-             <div class="box1"></div>
-        <div class="box2"></div>
-        <div class="box3"></div>
+<section class="hero">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-lg-6">
+        <h1>We offer modern solutions for growing your business</h1>
+        <p class="mb-4">We are team of talented designers making websites with Bootstrap</p>
+        <div class="d-flex align-items-center gap-3">
+          <a href="#" class="btn btn-primary btn-lg">Get Started</a>
+          <a href="#" class="btn-video"><i class="bi bi-play-circle"></i>Watch Video</a>
         </div>
-       
-       </section>
+      </div>
+      <div class="col-lg-6 text-center">
+        <img src="https://bootstrapmade.com/demo/templates/FlexStart/assets/img/hero-img.png" class="hero-img" alt="Hero Image">
+      </div>
+    </div>
+  </div>
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 </body>
+
+<section class="py-5 bg-light">
+  <div class="container">
+    <div class="row align-items-center">
+     
+      <div class="col-md-6 mb-4 mb-md-0">
+        <div class="p-4 bg-white shadow-sm rounded-3">
+          <h6 class="text-primary fw-bold">WHO WE ARE</h6>
+          <h2 class="fw-bold text-dark">
+            Expedita voluptas omnis cupiditate totam eveniet nobis sint iste. Dolores est repellat corrupti reprehenderit.
+          </h2>
+          <p class="text-muted mt-3">
+            Quisquam vel ut sint cum eos hic dolores aperiam. Sed deserunt et. Inventore et et dolor consequatur itaque ut voluptate sed et. 
+            Magnam nam ipsum tenetur suscipit voluptatum nam et est corrupti.
+          </p>
+          <a href="#" class="btn btn-primary mt-3">
+            Read More <i class="bi bi-arrow-right ms-2"></i>
+          </a>
+        </div>
+      </div>
+      
+      <div class="col-md-6 text-center">
+        <img src="./about.jpg" alt="Team Image" class="img-fluid rounded-3 shadow-sm">
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="py-5">
+  <div class="container text-center">
+    <h2 class="fw-bold mb-5">What we value most</h2>
+    <div class="row g-4">
+      
+      <div class="col-md-4">
+        <div class="card border-0 shadow-sm h-100">
+          <div class="card-body">
+            <img src="./values-1 (1).png" alt="Value 1" class="img-fluid mb-4" style="height: 200px;">
+            <h5 class="fw-bold text-primary">Ad cupiditate sed est odio</h5>
+            <p class="text-muted">Eum ad dolor et. Autem aut fugiat debitis voluptatem consequuntur sit. Et veritatis id.</p>
+          </div>
+        </div>
+      </div>
+  
+      <div class="col-md-4">
+        <div class="card border-0 shadow-sm h-100">
+          <div class="card-body">
+            <img src="./values-2.png" alt="Value 2" class="img-fluid mb-4" style="height: 200px;">
+            <h5 class="fw-bold text-primary">Voluptatem voluptatum alias</h5>
+            <p class="text-muted">Repudiandae amet nihil natus in distinctio suscipit id. Doloremque ducimus ea sit non.</p>
+          </div>
+        </div>
+      </div>
+  
+      <div class="col-md-4">
+        <div class="card border-0 shadow-sm h-100">
+          <div class="card-body">
+            <img src="./values-1 (1).png" alt="Value 3" class="img-fluid mb-4" style="height: 200px;">
+            <h5 class="fw-bold text-primary">Fugit cupiditate alias nobis.</h5>
+            <p class="text-muted">Quam rem vitae est autem molestias explicabo debitis sint. Vero aliquid quidem commodi.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="py-5">
+  <div class="container">
+    <div class="row align-items-center">
+      
+      <div class="col-lg-6 mb-4 mb-lg-0">
+        <img src="./features.png" alt="Advanced Features" class="img-fluid">
+      </div>
+
+      <div class="col-lg-6">
+        <h2 class="fw-bold mb-4 text-center text-lg-start">Our Advanced Features</h2>
+        <div class="row g-3">
+          <div class="col-sm-6">
+            <div class="d-flex align-items-start p-3 shadow-sm rounded bg-white">
+              <i class="bi bi-check2-circle text-primary me-3 fs-4"></i>
+              <span class="fw-semibold">Eos aspernatur rem</span>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="d-flex align-items-start p-3 shadow-sm rounded bg-white">
+              <i class="bi bi-check2-circle text-primary me-3 fs-4"></i>
+              <span class="fw-semibold">Facilis neque ipsa</span>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="d-flex align-items-start p-3 shadow-sm rounded bg-white">
+              <i class="bi bi-check2-circle text-primary me-3 fs-4"></i>
+              <span class="fw-semibold">Volup amet volupt</span>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="d-flex align-items-start p-3 shadow-sm rounded bg-white">
+              <i class="bi bi-check2-circle text-primary me-3 fs-4"></i>
+              <span class="fw-semibold">Rerum omnis sint</span>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="d-flex align-items-start p-3 shadow-sm rounded bg-white">
+              <i class="bi bi-check2-circle text-primary me-3 fs-4"></i>
+              <span class="fw-semibold">Alias possimus</span>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="d-flex align-items-start p-3 shadow-sm rounded bg-white">
+              <i class="bi bi-check2-circle text-primary me-3 fs-4"></i>
+              <span class="fw-semibold">Repellendus molli</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+
 </html>
